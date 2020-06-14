@@ -1,48 +1,56 @@
 <html>
 <title>Dr. Roberto Filho</title>
 <head>
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style_sheets/main.css">
+	<script src="scripts/script.js"></script>
 </head>
 <body>
 	<div id="content">
 		<div id="personal-info">
-			<img id="personal-photo" src="roberto.gif" />
+			<img id="personal-photo" src="images/roberto.gif" />
 			<p class="info" id="name">Dr. Roberto Rodrigues Filho</p>
 			<p class="info">Postdoctoral Researcher</p>
 			<p class="info">Institute of Informatics</p>
 			<p class="info">Federal University of Goiás</p>
 			<p class="info">Goiânia - GO, Brazil</p><br/>
 			<p class="info"><span style="font-weight: bold;">Contact:</span> roberto.vrfilho [at] gmail</p>
-			<span><a href="https://orcid.org/0000-0002-3323-0246" target="_blank"><img class="external-icons" src="orcid.jpeg"/></a></span>
-			<span><a href="https://scholar.google.com/citations?user=zxF9HOcAAAAJ&hl=en&oi=ao" target="_blank"><img class="external-icons" src="scholar.png"/></a></span>
-			<span><a href="http://lattes.cnpq.br/3150867071308016" target="_blank"><img class="external-icons" src="lattes.png"/></a></span>
+			<span><a href="https://orcid.org/0000-0002-3323-0246" target="_blank" alt="ORCID"><img class="external-icons" src="images/orcid.jpeg"/></a></span>
+			<span><a href="https://scholar.google.com/citations?user=zxF9HOcAAAAJ&hl=en&oi=ao" target="_blank" alt="Google Scholar"><img class="external-icons" src="images/scholar.png"/></a></span>
+			<span><a href="http://lattes.cnpq.br/3150867071308016" target="_blank" alt="CNPq Lattes"><img class="external-icons" src="images/lattes.png"/></a></span>
+			<span><a href="https://twitter.com/robertovrfilho" target="_blank" alt="Twitter"><img class="external-icons" src="images/twitter-icon.png"/></a></span>
 			<br />
 		</div>
 		<div id="main-menu">
 			<ul class="nav">
 				<li><a href="#" onClick="showAboutMe();">Home</a></li>
 				<li><a href="#" onClick="showPublicationList();">Publications</a></li>
-				<!-- TODO -->
-				<!--<li><a href="#" onClick="">Projects</a></li>-->
-				<!--<li><a href="#" onClick="">Teaching</a></li>-->
-				<!--<li><a href="#" onClick="showNews();">News</a></li>-->
-				<!--<li><a href="#" onClick="showMisc();">Misc</a></li>
-				<li><a href="#" onClick="showContact();">Contact</a></li>-->
+				<li><a href="#" onClick="showNews();">News</a></li>
 			</ul>
 		</div>
 		<div style="clear:both;"></div>
 		<div style="display:none;" id="news">
 			<h3>News</h3>
-			<a class="twitter-timeline" data-lang="en" data-height="1000" href="https://twitter.com/robertovrfilho?ref_src=twsrc%5Etfw">Tweets by robertovrfilho</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<div class="ÿear">
+				<h4>2020</h4>
+				<ul>
+					<li class="news"><span>Jun/2020:</span> My contract as Research Associate in Lancaster University has officially ended.</li>
+				</ul>
+			</div>
+			<div class="year">
+				<h4>2019</h4>
+				<ul>
+					<li class="news"><span>July/2019:</span> This summer (July-Sept) I will be visiting Prof. Fançois Taiani's research group in Rennes, France.</li>
+					<li class="news"><span>May/2019:</span> I am attending SASO'19 conference in Umea, Sweden (Jun/2019). I will be presenting a full paper in the main conference, a workshop paper in the SISSY workshop and a tutorial in the last day. If you are around, come and say hello!</li>
+				</ul>
+			</div>
 		</div>
 		<div id="about-me">
 			<h3>About me</h3>
-			<p>I hold a PhD degree in Computer Science from Lancaster University, UK (2018), and a MSc and BSc degree in Computer Science from Federal University of Goiás, Brazil (2013). Previously, I worked as Research Associate at Lancaster University (2017-2020), and I was a Visiting Researcher at IRISA/INRIA Université de Rennes 1, France (2019). I currently work as a Postdoctoral Researcher at Federal University of Goiás, Brazil, where I conduct research on Emergent Software Systems for Smart Cities. I also supervise one undergrad student and I am involved in the supervision of a PhD and a MSc student.</p>
+			<p>I hold a PhD degree in Computer Science from Lancaster University, UK (2018), and a MSc and BSc degree in Computer Science from Federal University of Goiás, Brazil (2013). Previously, I worked as Research Associate at Lancaster University (2017-2020), and I was a Visiting Researcher at IRISA/INRIA Université de Rennes 1, France, during summer (2019). I am currently a Postdoctoral Researcher at Federal University of Goiás, Brazil, where I conduct research on Emergent Software Systems for Smart Cities. I also oficially supervise one undergrad student and I am involved in the supervision of a PhD and a MSc student.</p>
 		</div>
 		<div id="research-interest">
 			<h3>Research interests</h3>
-			<p> I am interested in developing large-scale systems that are able to self-design at runtime to meet their user-defined goals. This mainly entails abstracting many aspects of a system's design into a simple action/reward matrix to be used by reinforcement learning algorithms during the system's life-time. I have applied this concept to create the very first <a href="https://www.youtube.com/watch?v=BBNvbC6w_3Y" target="_blank">self-designing web-serving infrastructure</a> that is able to autonomously optimise their performance when subjected to varying workloads. This is achieved by having the system to experiment with different ways in which to assemble its internal components to maximise satisfation of its goals. Further to that, I have been currently investigating how to apply the same concept to microservices, IoT applications and web cache systems. Specifically, for micriservices, I look into how machine learning in tandem with light-weight component-based technologies enable microservices internal architecture to autonomously adapt to boost their own performance, avoiding horizontal auto-scaling technologies to create unecessary replicas. For IoT applications, I am investigating how intent-rich network function-calls may be used to drive autonomic loops to optimise and enable oportunistic integration of different software modules that constitute IoT systems when they are running in volatile environments. Finally, for web-cache systems, I am investigating how to create emergent cache systems. Emergent cache systems are able to integrate themselves into pre-existing systems and to adjust themselves according to the target system needs, in order to better improve the target system's performance. For more on these ideas, please refer to my full publication list.</p><!-- this is very specific, I may make this more abstract and vision "grandioso"-->
+			<p> I am interested in developing large-scale systems that are able to self-design at runtime to meet their user-defined goals in situations where their executing environment constantly changes. This mainly entails abstracting many aspects of a system's design into a simple action/reward matrix to be used by reinforcement learning algorithms during the system's life-time. I have applied this concept to create the very first <a href="https://www.youtube.com/watch?v=BBNvbC6w_3Y" target="_blank">self-designing web-serving infrastructure</a> that is able to autonomously optimise their performance when subjected to varying workloads. This is achieved by having the system experiment with different ways in which to assemble its internal components to maximise satisfation of its goals. Further to that, I have been currently investigating how to apply the same concept to microservices, IoT systems and web cache applications. For more information on these ideas, please refer to my full <a href="#" onclick="showPublicationList();">publication list</a>.</p>
 		</div>
 		<div style="display: none;" id="publication-list">
 			<h3>Publication list</h3>
@@ -147,13 +155,6 @@
 			</div>
 			<br />
 			<a href="#">Go back to the top!</a>
-		</div>
-		<div style="display: none;" id="misc">
-			<h3>This page is under construction!</h3>
-		</div>
-		<div style="display:none;" id="contact">
-			<h3>Contact</h3>
-			<p>Please get in touch by emailing me: roberto.vrfilho [at] gmail. Also, feel free to tweet me at <a href="https://twitter.com/robertovrfilho">@robertovrfilho</a>.</p>
 		</div>
 	</div>
 </body>

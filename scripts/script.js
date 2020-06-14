@@ -7,10 +7,6 @@ function disappearAllPages() {
 	x.style.display = "none";
 	x = document.getElementById("publication-list");
 	x.style.display = "none";
-	x = document.getElementById("misc");
-	x.style.display = "none";
-	x = document.getElementById("contact");
-	x.style.display = "none";
 }
 
 function showAboutMe() {
@@ -36,22 +32,6 @@ function showPublicationList() {
 function showNews() {
 	disappearAllPages();
 	var x = document.getElementById("news");
-	if (x.style.display === "none") {
-		x.style.display = "block";
-	}
-}
-
-function showMisc() {
-	disappearAllPages();
-	var x = document.getElementById("misc");
-	if (x.style.display === "none") {
-		x.style.display = "block";
-	}
-}
-
-function showContact() {
-	disappearAllPages();
-	var x = document.getElementById("contact");
 	if (x.style.display === "none") {
 		x.style.display = "block";
 	}

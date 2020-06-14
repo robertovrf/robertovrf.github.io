@@ -7,14 +7,16 @@ body {
 	margin: 0;
 }
 
-ol,ul {
-	list-style: none;
+h4 {
+	border:1px solid #ccc;
+    border-width:1px 0;
+    padding: 7px 0 7px 0;
 }
 
 #content {	
 	margin: auto;
 	width: 50%;
-	/*border: 3px solid grey;*/
+	border: 3px solid grey;
 	padding: 25px;
 	display: block;
 	background-color: white;
@@ -80,13 +82,7 @@ ol,ul {
 	font-weight: bold;
 }
 
-h4 {
-	border:1px solid #ccc;
-    border-width:1px 0;
-    padding: 7px 0 7px 0;
-}
-
-.nav{
+.nav {
     border:1px solid #ccc;
     border-width:1px 0;
     list-style:none;
@@ -95,12 +91,20 @@ h4 {
     text-align:center;
 }
 
-.nav li{
+.nav li {
     display:inline;
 }
 
-.nav a{
+.nav a {
     display:inline-block;
     padding:10px;
 }
 
+.news span {
+	font-weight: bold;
+	color: black;
+}
+
+.news {
+	margin: 20px 0 0 0;
+}
