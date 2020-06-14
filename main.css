@@ -1,0 +1,106 @@
+html {
+	font-family: sans-serif;
+	background-color: lightgrey;
+}
+
+body {
+	margin: 0;
+}
+
+ol,ul {
+	list-style: none;
+}
+
+#content {	
+	margin: auto;
+	width: 50%;
+	/*border: 3px solid grey;*/
+	padding: 25px;
+	display: block;
+	background-color: white;
+}
+
+#personal-info {
+	margin-top:27px;
+}
+
+#personal-photo {
+	width: 150px;
+	height: 209.85px;
+	padding: 0 20px 0 0;
+	float: left;
+}
+
+.external-icons {
+	width: 25px;
+}
+
+#name {
+	font-size: 25px;
+	padding-top: 20px;
+}
+
+.info {
+	line-height: 4px;
+}
+
+#research-interest {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+#about-me {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+#publication-list p {
+	margin: 5px 0 0 0;
+}
+
+.paper-type {
+	color: grey;
+	font-size: 12px;
+}
+
+.me {
+	font-weight: bold;
+}
+
+.publication-info {
+	font-style: italic;
+}
+
+.paper {
+	margin-top: 30px;
+}
+
+.title {
+	color: grey;
+	font-weight: bold;
+}
+
+h4 {
+	border:1px solid #ccc;
+    border-width:1px 0;
+    padding: 7px 0 7px 0;
+}
+
+.nav{
+    border:1px solid #ccc;
+    border-width:1px 0;
+    list-style:none;
+    margin:20px 0 0 0;
+    padding:0;
+    text-align:center;
+}
+
+.nav li{
+    display:inline;
+}
+
+.nav a{
+    display:inline-block;
+    padding:10px;
+}
+
