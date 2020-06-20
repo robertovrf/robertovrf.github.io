@@ -46,6 +46,10 @@ h4 {
 	padding-top: 20px;
 }
 
+.info {
+	margin: 0 0 0 0;
+}
+
 #research-interest {
 	text-align: justify;
 	text-justify: inter-word;
