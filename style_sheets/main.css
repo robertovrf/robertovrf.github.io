@@ -112,3 +112,17 @@ h4 {
 .news {
 	margin: 20px 0 0 0;
 }
+
+div .year {
+	text-align: justify;
+	padding-top: 3px;
+}
+
+div .footnote {
+	text-align: right;
+	line-height: 0.4;
+}
+
+div .footnote p {
+	font-size: .7rem;
+}
