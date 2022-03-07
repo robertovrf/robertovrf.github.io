@@ -126,3 +126,8 @@ div .footnote {
 div .footnote p {
 	font-size: .7rem;
 }
+
+.paper-type a {
+	color: red;
+	font-size: 12px;
+}
