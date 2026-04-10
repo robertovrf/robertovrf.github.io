@@ -233,10 +233,14 @@ h4::after {
 .news span {
     font-weight: bold;
     color: #222;
+}
+
+#news span {
     display: block;
     text-align: justify;
     text-justify: inter-word;
 }
+
 
 /* ================================
    RODAPÉ
