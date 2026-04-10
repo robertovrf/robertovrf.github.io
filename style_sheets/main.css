@@ -110,11 +110,11 @@ body {
    ================================ */
 
 #content a:link {
-    color: #009739; /* verde UnB */
+    color: #009739; 
 }
 
 #content a:visited {
-    color: #003366; /* azul UnB */
+    color: #004d1d; 
 }
 
 #content a:hover {
@@ -207,11 +207,6 @@ h4::after {
 
 .paper-type {
     color: #009739;
-    font-size: 12px;
-}
-
-.paper-type a {
-    color: #cc0000;
     font-size: 12px;
 }
 
