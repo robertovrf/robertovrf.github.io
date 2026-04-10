@@ -1,133 +1,271 @@
+/* ================================
+   ESTILO MINIMALISTA + CORES SUAVES UnB
+   ================================ */
+
 html {
-	font-family: sans-serif;
-	background-color: lightgrey;
+    font-family: "Inter", "Segoe UI", sans-serif;
+    background: #f5f7fa;
+    color: #222;
 }
 
 body {
-	margin: 0;
+    margin: 0;
 }
 
-h4 {
-	border:1px solid #ccc;
-    border-width:1px 0;
-    padding: 7px 0 7px 0;
+/* Container principal */
+#content {
+    margin: auto;
+    width: 60%;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
-#content {	
-	margin: auto;
-	width: 50%;
-	border: 3px solid grey;
-	padding: 25px;
-	display: block;
-	background-color: white;
-}
-
+/* Informações pessoais */
 #personal-info {
-	margin: 27px 0 45px 0;
+   /*margin: 20px 0 40px 0;*/
+    padding: 35px;
+    background: #f9fbfc;
+    border-radius: 10px;
+    border: 1px solid #e6eef2;
 }
 
 #personal-photo {
-	width: 150px;
-	height: 209.85px;
-	padding: 0 20px 0 0;
-	float: left;
-}
-
-.external-icons {
-	width: 25px;
-}
-
-.paper-info img {
-	margin: 5px 0 0 5px;
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #dce7ee;
+    float: left;
+    margin-right: 20px;
 }
 
 #name {
-	font-size: 25px;
-	padding-top: 20px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #003366;
+    margin-top: 10px;
 }
 
 .info {
-	margin: 0 0 0 0;
+    margin: 2px 0;
 }
 
-#research-interest {
-	text-align: justify;
-	text-justify: inter-word;
+/* Ícones externos */
+.external-icons {
+    width: 26px;
+    /*margin: 4px;*/
+    opacity: 0.85;
+    transition: 0.2s ease;
 }
 
-#about-me {
-	text-align: justify;
-	text-justify: inter-word;
+.external-icons:hover {
+    opacity: 1;
+    transform: scale(1.05);
 }
 
-#publication-list p {
-	margin: 5px 0 0 0;
-}
-
-.paper-type {
-	color: grey;
-	font-size: 12px;
-}
-
-.me {
-	font-weight: bold;
-}
-
-.publication-info {
-	font-style: italic;
-}
-
-.paper {
-	margin-top: 30px;
-}
-
-.title {
-	color: grey;
-	font-weight: bold;
-}
+/* ================================
+   MENU
+   ================================ */
 
 .nav {
-    border:1px solid #ccc;
-    border-width:1px 0;
-    list-style:none;
-    margin:20px 0 0 0;
-    padding:0;
-    text-align:center;
+    list-style: none;
+    margin: 30px 0 0 0;
+    padding: 0;
+    text-align: center;
+    background: #eaf2f7;
+    border-radius: 8px;
+    border: 1px solid #d5e1ea;
 }
 
 .nav li {
-    display:inline;
+    display: inline;
 }
 
-.nav a {
-    display:inline-block;
-    padding:10px;
+/* Links do menu – sobrescrevem regras gerais */
+.nav a:link,
+.nav a:visited {
+    display: inline-block;
+    padding: 12px 18px;
+    color: #003366;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s ease;
 }
 
-.news span {
-	font-weight: bold;
-	color: black;
+.nav a:hover {
+    background: #d9ecf5;
+    border-radius: 6px;
+    color: #003366;
 }
 
-.news {
-	margin: 20px 0 0 0;
+.nav a:active {
+    color: #003366;
 }
 
-div .year {
-	text-align: justify;
-	padding-top: 3px;
+/* ================================
+   LINKS DO CONTEÚDO (inclui tudo dentro de #content,
+   mas o menu é sobrescrito acima)
+   ================================ */
+
+#content a:link {
+    color: #009739; /* verde UnB */
 }
 
-div .footnote {
-	text-align: right;
-	line-height: 0.4;
+#content a:visited {
+    color: #003366; /* azul UnB */
 }
 
-div .footnote p {
-	font-size: .7rem;
+#content a:hover {
+    color: #006b2a;
+    text-decoration: underline;
+}
+
+#content a:active {
+    color: #004d1d;
+}
+
+/* ================================
+   SEÇÕES
+   ================================ */
+
+#about-me, #research-interest {
+    text-align: justify;
+    padding: 20px;
+    margin-top: 30px;
+    background: #fdfefe;
+    border-radius: 10px;
+    border: 1px solid #e6eef2;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+/* h4 com linha suave */
+h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #003366;
+    margin-top: 35px;
+    margin-bottom: 12px;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+h4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60%;
+    height: 2px;
+    background: linear-gradient(to right, #00973955, transparent);
+    border-radius: 2px;
+}
+
+/* ================================
+   LISTAS DO CONTEÚDO (não afeta o menu)
+   ================================ */
+
+/* ul que NÃO são o menu */
+#content ul:not(.nav) {
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+#content ul:not(.nav) li {
+    list-style: none;
+    background: #f8fbfd;
+    border: 1px solid #e2ebf0;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin: 10px 0;
+    color: #003366;
+    line-height: 1.4;
+}
+
+/* ================================
+   PUBLICAÇÕES
+   ================================ */
+
+.paper {
+    margin-top: 30px;
+    padding: 15px;
+    border-left: 4px solid #00973955;
+    background: #fafcfd;
+    border-radius: 6px;
+}
+
+.paper-info img {
+    margin: 5px 0 0 5px;
+}
+
+.paper-type {
+    color: #009739;
+    font-size: 12px;
 }
 
 .paper-type a {
-	color: red;
-	font-size: 12px;
+    color: #cc0000;
+    font-size: 12px;
 }
+
+.title {
+    color: #003366;
+    font-weight: 600;
+}
+
+.publication-info {
+    font-style: italic;
+}
+
+/* ================================
+   NEWS
+   ================================ */
+
+.news {
+    margin: 20px 0 0 0;
+}
+
+.news span {
+    font-weight: bold;
+    color: #222;
+}
+
+/* ================================
+   RODAPÉ
+   ================================ */
+
+div .footnote {
+    text-align: right;
+    line-height: 0.4;
+}
+
+div .footnote p {
+    font-size: .7rem;
+}
+
+/* LINKS DO MENU — sobrescrevem qualquer regra geral */
+.nav a:link {
+    color: #003366 !important; /* azul UnB */
+}
+
+.nav a:visited {
+    color: #003366 !important;
+}
+
+.nav a:hover {
+    color: #003366 !important;
+    background: #d9ecf5;
+    border-radius: 6px;
+}
+
+.nav a:active {
+    color: #003366 !important;
+}
+
