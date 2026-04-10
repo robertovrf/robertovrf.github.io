@@ -209,6 +209,9 @@ h4::after {
     color: #009739;
     font-size: 12px;
 }
+.paper-type a {
+    color: #009739 !important; /* verde UnB */
+}
 
 .title {
     color: #003366;
