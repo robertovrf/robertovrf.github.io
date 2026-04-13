@@ -274,3 +274,19 @@ div .footnote p {
     color: #003366 !important;
 }
 
+/* Destacar seu nome nas publicações */
+.me {
+    font-weight: 600;
+    color: #009739;
+    background: #00973915;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+/* Destacar página ativa no menu */
+.nav a.active {
+    background: #d9ecf5;
+    color: #003366 !important;
+    border-radius: 6px;
+    font-weight: 600;
+}
